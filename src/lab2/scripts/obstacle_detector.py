@@ -65,9 +65,7 @@ class Obstacle_detector(Node):
         self.occ.y = 1.0 if (0.0 < dc <= TH) else 0.0
         self.occ.z = 1.0 if (0.0 < dr <= TH) else 0.0
 
-        self.get_logger().info(
-            f"Occupancy → Izq:{self.occ.x:.0f} Cent:{self.occ.y:.0f} Der:{self.occ.z:.0f}"
-        )
+        # self.get_logger().info(f"Occupancy → Izq:{self.occ.x:.0f} Cent:{self.occ.y:.0f} Der:{self.occ.z:.0f}")
 
     def publicar_occupancy(self):
         self.occupancy_pub.publish(self.occ)

@@ -17,7 +17,7 @@ def main():
     # Instancia cada uno de los nodos
     obs_node      = Obstacle_detector()
     nav_node      = Desplazador()
-    pid_node      = PIDController(0.5, 0.1, 0.01)
+    pid_node      = PIDController()
     vel_pub_node  = VelocityPublisher()
     loader_node   = PoseLoader(sys.argv[1])  # Ruta al archivo de poses como argumento
 

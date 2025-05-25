@@ -2,21 +2,23 @@
 
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Float64MultiArray
-from std_msgs.msg import Float64, Bool, Vector3
-from math import sqrt, arctan2
+from geometry_msgs.msg import Vector3
+from std_msgs.msg import Float64MultiArray, Bool
+from nav_msgs.msg import Odometry
+from math import sqrt
+from numpy import arctan2
 
 from rclpy.callback_groups import ReentrantCallbackGroup
 from rclpy.executors import MultiThreadedExecutor
 
 class PIDController(Node):
-    def __init__(self, Kp, Ki, Kd):
+    def __init__(self):
         super().__init__('pid_controller')
         cbg = ReentrantCallbackGroup()
     	# Se inicializan las variables y coeficientes
-        self.Kp = Kp
-        self.Ki = Ki
-        self.Kd = Kd
+        self.Kp = 0
+        self.Ki = 0
+        self.Kd = 0
 
         # Estado del sistema se modificara cada vuelta nueva
         self.r_t = 0.0
@@ -38,7 +40,7 @@ class PIDController(Node):
 
         # Suscriptores
         self.create_subscription(Float64MultiArray, 'objetivo', self.callback_setpoint, 10,callback_group=cbg)
-        self.create_subscription(Vector3, '/odom', self.callback_state, 10, callback_group=cbg)
+        self.create_subscription(Odometry, '/odom', self.callback_state, 10, callback_group=cbg)
         # Publicador
         self.pub_vel = self.create_publisher(Float64MultiArray, 'pub_vel', 10, callback_group=cbg)
         self.pub_pid_ready = self.create_publisher(Bool, 'pid_ready', 10, callback_group=cbg)
@@ -50,24 +52,33 @@ class PIDController(Node):
         lineal, angular = msg.data
 
         if lineal != 0.0:
+            self.get_logger().info("Recivi moviemiento lineal")
             self.r_t = lineal
             self.tipo_control = "lineal"
+            self.Kp, self.Ki, self.Kd = 0.1, 0.0, 0.0
         elif angular != 0.0:
             self.r_t = angular
             self.tipo_control = "angular"
+            self.Kp, self.Ki, self.Kd = 0.01, 0.0, 0.0
         else:
             self.tipo_control = None  # ningún desplazamiento
 
     def callback_state(self, msg):
-        if self.tipo_control=='lineal':
-            self.y_t = sqrt(msg.pose.pose.position.x**2 + msg.pose.pose.position.y**2) 
-        else:
-            self.y_t = arctan2(msg.pose.pose.position.y, msg.pose.pose.position.x)  # theta
+        x = msg.pose.pose.position.x
+        y = msg.pose.pose.position.y
+        yaw = arctan2( msg.pose.pose.orientation.z,
+                     msg.pose.pose.orientation.x )  # si usas quaternion puro, convierte bien
+
+        if self.tipo_control == 'lineal':
+            self.y_t = sqrt(x*x + y*y)
+        elif self.tipo_control == 'angular':
+            self.y_t = yaw
 
     def control_loop(self):
+
         if self.tipo_control is None:
             return  # No hay nada que hacer
-        
+
         # Error actual
         self.e_k = self.r_t - self.y_t
 
@@ -93,13 +104,15 @@ class PIDController(Node):
         self.u_k1 = u_k
 
         # salimos del pid si se alcanza el objetivo del momento
-        if abs(self.e_k) < 0.01:
+        if abs(self.e_k) < 0.1:
             self.pub_pid_ready.publish(Bool(data=True))
+            self.get_logger().info(">>> Movimiento PID terminado")
+
 
 
 def main(args=None):
     rclpy.init(args=args)
-    pid = PIDController(0.5, 0.1, 0.01) 
+    pid = PIDController()
     rclpy.spin(pid)
     pid.destroy_node()
     rclpy.shutdown()

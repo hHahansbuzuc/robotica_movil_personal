@@ -5,23 +5,14 @@ from rclpy.node import Node
 from rclpy.callback_groups import ReentrantCallbackGroup
 from std_msgs.msg import Float64MultiArray
 from geometry_msgs.msg import Twist
+from time import sleep
 
 class VelocityPublisher(Node):
     def __init__(self):
         super().__init__('velocity_publisher')
         cbg = ReentrantCallbackGroup()
-        self.speed = 0.0
-        self.tipo_control = None
-        # Publicador de velocidad (Float64) en 'pub_vel'
-        self.sub_pid = self.create_subscription(
-            Float64MultiArray,
-            'pub_vel',
-            self.twist_callback,
-            10,
-            callback_group=cbg
-        )
 
-        # Suscripción al Twist de cmd_vel_mux
+        # Publisher hacia el mux de cmd_vel
         self.cmd_vel_pub = self.create_publisher(
             Twist,
             '/cmd_vel_mux/cmd_vel',
@@ -29,18 +20,23 @@ class VelocityPublisher(Node):
             callback_group=cbg
         )
 
-    def pubvel_callback(self, msg: Twist):
-        velocidad = msg.data
+        # Subscriber al array [linear, angular]
+        self.create_subscription(
+            Float64MultiArray,
+            'pub_vel',
+            self.pubvel_callback,
+            10,
+            callback_group=cbg
+        )
+
+    def pubvel_callback(self, msg: Float64MultiArray):
+        linear, angular = msg.data
         twist = Twist()
-        twist.linear.x = velocidad[0]
-        twist.angular.z = velocidad[1]
+        twist.linear.x  = linear
+        twist.angular.z = angular
 
-
-    def twist_callback(self, msg: Float64MultiArray):
-        # Obtener la velocidad desde el PID
-        self.speed = msg.data[0]
-        self.tipo_control = msg.data[1]
-        self.get_logger().info(f'[velocity_publisher] velocidad recibida: {self.speed:.3f}')
+        # self.get_logger().info(f'[velocity_publisher] publicando Twist → linear.x={linear:.3f}, angular.z={angular:.3f}')
+        self.cmd_vel_pub.publish(twist)
 
 def main(args=None):
     rclpy.init(args=args)

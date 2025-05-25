@@ -6,10 +6,8 @@ from rclpy.executors import MultiThreadedExecutor
 
 
 from rclpy.node import Node
-from geometry_msgs.msg import Twist, PoseArray, Pose
-from geometry_msgs.msg import Vector3, Bool
-from nav_msgs.msg import Odometry
-from std_msgs.msg import Float64MultiArray
+from geometry_msgs.msg import PoseArray, Pose, Vector3
+from std_msgs.msg import Bool, Float64MultiArray
 import math, time
 
 
@@ -25,16 +23,12 @@ class Desplazador(Node):
         self.sub_pid_ready = self.create_subscription(Bool, 'pid_ready', self.cb_pid_done, 10, callback_group=cbg)
         self.pub_desplazador = self.create_publisher(Float64MultiArray, 'objetivo', 10, callback_group=cbg)
 
-        self.pose = Pose()
-        self.v_lin = 0.2
-        self.v_ang = 1.0
-        self.occupancy = Vector3(x=0.0, y=0.0, z=0.0)
         self.ready = False
 
 
 
     def cb_occupancy(self, msg):
-        self.get_logger().info(f"CB_OCC ➜ occupancy_state = ({msg.x:.1f}, {msg.y:.1f}, {msg.z:.1f})")
+        # self.get_logger().info(f"CB_OCC ➜ occupancy_state = ({msg.x:.1f}, {msg.y:.1f}, {msg.z:.1f})")
         self.occupancy = msg
     
     def cb_pid_done(self, msg):
@@ -44,9 +38,9 @@ class Desplazador(Node):
         # El movimiento va a consistir en 3 pasos, primero apuntar, luego dirigirme y finalmente girarme
         # Descomposición
         # (lineal) + (angular) + (lineal)
-        x = goal_pose[0]
-        y = goal_pose[1]
-        theta = goal_pose[2]
+        x = goal_pose.position.x
+        y = goal_pose.position.y
+        theta = goal_pose.orientation.z
 
         distancia = math.sqrt(x**2 + y**2)
         rotacion = theta
