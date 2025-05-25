@@ -1,0 +1,1 @@
+/home/maxbe/ros2_ws/build/lab1/ament_cmake_core/lab1Config.cmake

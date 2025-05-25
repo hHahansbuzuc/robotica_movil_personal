@@ -1,0 +1,8 @@
+<launch>
+
+  <node pkg="lab1" 
+  name="obstacle_detector" 
+  exec="obstacle_detector.py" 
+  output="screen" />
+
+</launch>

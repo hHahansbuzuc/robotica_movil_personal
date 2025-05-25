@@ -1,0 +1,3 @@
+Invoking command in '/home/maxbe/ros2_ws/build/very_simple_robot_simulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maxbe/ros2_ws/build/very_simple_robot_simulator -- -j12 -l12
+Invoked command in '/home/maxbe/ros2_ws/build/very_simple_robot_simulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maxbe/ros2_ws/build/very_simple_robot_simulator -- -j12 -l12
+Invoking command in '/home/maxbe/ros2_ws/build/very_simple_robot_simulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maxbe/ros2_ws/build/very_simple_robot_simulator

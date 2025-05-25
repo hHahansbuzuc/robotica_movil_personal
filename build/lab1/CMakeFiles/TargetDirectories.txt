@@ -1,0 +1,11 @@
+/home/maxbe/ros2_ws/build/lab1/CMakeFiles/uninstall.dir
+/home/maxbe/ros2_ws/build/lab1/CMakeFiles/lab1_uninstall.dir
+/home/maxbe/ros2_ws/build/lab1/CMakeFiles/ament_cmake_python_symlink_lab1.dir
+/home/maxbe/ros2_ws/build/lab1/CMakeFiles/ament_cmake_python_build_lab1_egg.dir
+/home/maxbe/ros2_ws/build/lab1/CMakeFiles/test.dir
+/home/maxbe/ros2_ws/build/lab1/CMakeFiles/edit_cache.dir
+/home/maxbe/ros2_ws/build/lab1/CMakeFiles/rebuild_cache.dir
+/home/maxbe/ros2_ws/build/lab1/CMakeFiles/list_install_components.dir
+/home/maxbe/ros2_ws/build/lab1/CMakeFiles/install.dir
+/home/maxbe/ros2_ws/build/lab1/CMakeFiles/install/local.dir
+/home/maxbe/ros2_ws/build/lab1/CMakeFiles/install/strip.dir

@@ -1,0 +1,30 @@
+[0.022s] Invoking command in '/home/maxbe/ros2_ws/build/cmd_vel_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maxbe/ros2_ws/build/cmd_vel_mux -- -j12 -l12
+[0.093s] [ 50%] Built target cmd_vel_mux_node
+[0.093s] [100%] Built target cmd_vel_mux
+[0.101s] Invoked command in '/home/maxbe/ros2_ws/build/cmd_vel_mux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maxbe/ros2_ws/build/cmd_vel_mux -- -j12 -l12
+[0.102s] Invoking command in '/home/maxbe/ros2_ws/build/cmd_vel_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maxbe/ros2_ws/build/cmd_vel_mux
+[0.107s] -- Install configuration: ""
+[0.108s] -- Execute custom install script
+[0.109s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/cmd_vel_mux/lib/cmd_vel_mux/cmd_vel_mux_node
+[0.109s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/cmd_vel_mux/lib/libcmd_vel_mux.so
+[0.110s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/cmd_vel_mux/include/cmd_vel_mux/cmd_vel_mux.hpp
+[0.110s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/config/cmd_vel_mux_params.yaml
+[0.110s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/launch/cmd_vel_mux-composed-launch.py
+[0.110s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/launch/cmd_vel_mux-launch.py
+[0.111s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/cmd_vel_mux/share/ament_index/resource_index/package_run_dependencies/cmd_vel_mux
+[0.111s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/cmd_vel_mux/share/ament_index/resource_index/parent_prefix_path/cmd_vel_mux
+[0.111s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/environment/ament_prefix_path.sh
+[0.112s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/environment/ament_prefix_path.dsv
+[0.112s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/environment/path.sh
+[0.112s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/environment/path.dsv
+[0.112s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.bash
+[0.113s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.sh
+[0.113s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.zsh
+[0.114s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.dsv
+[0.114s] -- Symlinking: /home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.dsv
+[0.123s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/cmd_vel_mux/share/ament_index/resource_index/packages/cmd_vel_mux
+[0.123s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/cmd_vel_mux/share/ament_index/resource_index/rclcpp_components/cmd_vel_mux
+[0.123s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/cmake/cmd_vel_muxConfig.cmake
+[0.124s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/cmake/cmd_vel_muxConfig-version.cmake
+[0.124s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.xml
+[0.134s] Invoked command in '/home/maxbe/ros2_ws/build/cmd_vel_mux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maxbe/ros2_ws/build/cmd_vel_mux

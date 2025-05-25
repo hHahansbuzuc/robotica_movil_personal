@@ -1,0 +1,8 @@
+<launch>
+
+  <node pkg="lab1"
+      exec="dead_reckoning_nav.py"
+      name="dead_reckoning_nav"
+      output="screen"/>
+
+</launch>

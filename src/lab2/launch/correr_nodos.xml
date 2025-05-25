@@ -1,0 +1,6 @@
+<launch>
+
+  <include file="$(find-pkg-share lab1)/launch/dead_reckoning.xml" />
+  <include file="$(find-pkg-share lab1)/launch/obstacle_detector.xml" />
+
+</launch>

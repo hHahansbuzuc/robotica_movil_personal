@@ -1,0 +1,53 @@
+[0.010s] Invoking command in '/home/maxbe/ros2_ws/build/lab2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maxbe/ros2_ws/build/lab2 -- -j12 -l12
+[0.024s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.102s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.108s] -- Found rclpy: 3.3.16 (/opt/ros/humble/share/rclpy/cmake)
+[0.108s] -- Found std_msgs: 4.8.0 (/opt/ros/humble/share/std_msgs/cmake)
+[0.239s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.241s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.245s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.251s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.260s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.275s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.283s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.295s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.342s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.342s] -- Added test 'lint_cmake' to check CMake code style
+[0.342s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.344s] -- Added test 'xmllint' to check XML markup files
+[0.344s] -- Configuring done
+[0.347s] -- Generating done
+[0.349s] -- Build files have been written to: /home/maxbe/ros2_ws/build/lab2
+[0.365s] Invoked command in '/home/maxbe/ros2_ws/build/lab2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maxbe/ros2_ws/build/lab2 -- -j12 -l12
+[0.371s] Invoking command in '/home/maxbe/ros2_ws/build/lab2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maxbe/ros2_ws/build/lab2
+[0.375s] -- Install configuration: ""
+[0.375s] -- Execute custom install script
+[0.376s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab2/lib/lab2/desplazador.py
+[0.376s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab2/lib/lab2/pose_loader.py
+[0.376s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab2/lib/lab2/pub_velocidad.py
+[0.376s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab2/lib/lab2/pid.py
+[0.377s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab2/lib/lab2/run_all.py
+[0.377s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab2/lib/lab2/obstacle_detector.py
+[0.377s] -- Symlinking: /home/maxbe/ros2_ws/install/lab2/share/lab2//launch/accion_y_percepcion.xml
+[0.381s] -- Symlinking: /home/maxbe/ros2_ws/install/lab2/share/lab2//launch/avanzar_y_rotar.xml
+[0.386s] -- Symlinking: /home/maxbe/ros2_ws/install/lab2/share/lab2//launch/correr_nodos.xml
+[0.390s] -- Symlinking: /home/maxbe/ros2_ws/install/lab2/share/lab2//launch/dead_reckoning.xml
+[0.396s] -- Symlinking: /home/maxbe/ros2_ws/install/lab2/share/lab2//launch/obstacle_detector.xml
+[0.400s] -- Symlinking: /home/maxbe/ros2_ws/install/lab2/share/lab2//launch/run_all.xml
+[0.405s] -- Symlinking: /home/maxbe/ros2_ws/install/lab2/share/lab2/config/poses.txt
+[0.410s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab2/share/ament_index/resource_index/package_run_dependencies/lab2
+[0.410s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab2/share/ament_index/resource_index/parent_prefix_path/lab2
+[0.410s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab2/share/lab2/environment/ament_prefix_path.sh
+[0.410s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab2/share/lab2/environment/ament_prefix_path.dsv
+[0.410s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab2/share/lab2/environment/path.sh
+[0.410s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab2/share/lab2/environment/path.dsv
+[0.411s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab2/share/lab2/local_setup.bash
+[0.411s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab2/share/lab2/local_setup.sh
+[0.411s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab2/share/lab2/local_setup.zsh
+[0.411s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab2/share/lab2/local_setup.dsv
+[0.411s] -- Symlinking: /home/maxbe/ros2_ws/install/lab2/share/lab2/package.dsv
+[0.416s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab2/share/ament_index/resource_index/packages/lab2
+[0.416s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab2/share/lab2/cmake/lab2Config.cmake
+[0.416s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab2/share/lab2/cmake/lab2Config-version.cmake
+[0.416s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab2/share/lab2/package.xml
+[0.419s] Invoked command in '/home/maxbe/ros2_ws/build/lab2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maxbe/ros2_ws/build/lab2

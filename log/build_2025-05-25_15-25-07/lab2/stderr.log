@@ -1,0 +1,4 @@
+[31mCMake Error at CMakeLists.txt:27 (ament_lint_auto_find_test_dependencies):
+  Unknown CMake command "ament_lint_auto_find_test_dependencies".
+
+[0m

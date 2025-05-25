@@ -1,0 +1,56 @@
+[0.019s] Invoking command in '/home/maxbe/ros2_ws/build/lab1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maxbe/ros2_ws/build/lab1 -- -j12 -l12
+[0.056s] Built target ament_cmake_python_symlink_lab1
+[0.237s] running egg_info
+[0.237s] writing lab1.egg-info/PKG-INFO
+[0.238s] writing dependency_links to lab1.egg-info/dependency_links.txt
+[0.238s] writing top-level names to lab1.egg-info/top_level.txt
+[0.239s] reading manifest file 'lab1.egg-info/SOURCES.txt'
+[0.239s] writing manifest file 'lab1.egg-info/SOURCES.txt'
+[0.256s] Built target ament_cmake_python_build_lab1_egg
+[0.265s] Invoked command in '/home/maxbe/ros2_ws/build/lab1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maxbe/ros2_ws/build/lab1 -- -j12 -l12
+[0.265s] Invoking command in '/home/maxbe/ros2_ws/build/lab1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maxbe/ros2_ws/build/lab1
+[0.271s] -- Install configuration: ""
+[0.272s] -- Execute custom install script
+[0.272s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/share/lab1/environment/pythonpath.sh
+[0.272s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/share/lab1/environment/pythonpath.dsv
+[0.273s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/local/lib/python3.10/dist-packages/lab1-0.0.0-py3.10.egg-info/PKG-INFO
+[0.273s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/local/lib/python3.10/dist-packages/lab1-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.273s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/local/lib/python3.10/dist-packages/lab1-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.273s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/local/lib/python3.10/dist-packages/lab1-0.0.0-py3.10.egg-info/top_level.txt
+[0.274s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/local/lib/python3.10/dist-packages/lab1/__init__.py
+[0.274s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/lib/lab1/data_recorder.py
+[0.274s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/lib/lab1/dead_reckoning_nav.py
+[0.274s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/lib/lab1/obstacle_detector.py
+[0.274s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/lib/lab1/pose_loader.py
+[0.275s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/lib/lab1/run_all.py
+[0.275s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/lib/lab1/teleop_nav.py
+[0.275s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/lib/lab1/dead_reckoning_nav.py
+[0.275s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/lib/lab1/obstacle_detector.py
+[0.276s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/lib/lab1/pose_loader.py
+[0.276s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/lib/lab1/data_recorder.py
+[0.276s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/lib/lab1/teleop_nav.py
+[0.276s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/lib/lab1/obstacle_detector.py
+[0.276s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/share/lab1//launch/accion_y_percepcion.xml
+[0.276s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/share/lab1//launch/avanzar_y_rotar.xml
+[0.276s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/share/lab1//launch/correr_nodos.xml
+[0.277s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/share/lab1//launch/dead_reckoning.xml
+[0.277s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/share/lab1//launch/obstacle_detector.xml
+[0.277s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/share/lab1//launch/run_all.xml
+[0.277s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/share/lab1/config/poses.txt
+[0.277s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/share/ament_index/resource_index/package_run_dependencies/lab1
+[0.278s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/share/ament_index/resource_index/parent_prefix_path/lab1
+[0.278s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/share/lab1/environment/ament_prefix_path.sh
+[0.278s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/share/lab1/environment/ament_prefix_path.dsv
+[0.278s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/share/lab1/environment/path.sh
+[0.278s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/share/lab1/environment/path.dsv
+[0.279s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/share/lab1/local_setup.bash
+[0.279s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/share/lab1/local_setup.sh
+[0.279s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/share/lab1/local_setup.zsh
+[0.279s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/share/lab1/local_setup.dsv
+[0.279s] -- Symlinking: /home/maxbe/ros2_ws/install/lab1/share/lab1/package.dsv
+[0.285s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/share/ament_index/resource_index/packages/lab1
+[0.285s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/share/lab1/cmake/lab1Config.cmake
+[0.285s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/share/lab1/cmake/lab1Config-version.cmake
+[0.285s] -- Up-to-date symlink: /home/maxbe/ros2_ws/install/lab1/share/lab1/package.xml
+[0.308s] Listing '/home/maxbe/ros2_ws/install/lab1/local/lib/python3.10/dist-packages/lab1'...
+[0.313s] Invoked command in '/home/maxbe/ros2_ws/build/lab1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maxbe/ros2_ws/build/lab1

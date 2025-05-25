@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-3fbd3033729dd55ad8a0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "very_simple_robot_simulator",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_very_simple_robot_simulator_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_very_simple_robot_simulator_egg-10aab249cfb69235f08a.json",
+					"name" : "ament_cmake_python_build_very_simple_robot_simulator_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_very_simple_robot_simulator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_very_simple_robot_simulator-08a648e8e65cc618fb14.json",
+					"name" : "ament_cmake_python_symlink_very_simple_robot_simulator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kinect_simulator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kinect_simulator-c3231fc929aac4c2a4bf.json",
+					"name" : "kinect_simulator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lidar_simulator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lidar_simulator-cd8b4509a4ae25c7733b.json",
+					"name" : "lidar_simulator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-10e08f1d47e0c5ac4686.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "very_simple_robot_simulator_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-very_simple_robot_simulator_uninstall-46da67ed75f16c4b0946.json",
+					"name" : "very_simple_robot_simulator_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/maxbe/ros2_ws/build/very_simple_robot_simulator",
+		"source" : "/home/maxbe/ros2_ws/src/very_simple_robot_simulator"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

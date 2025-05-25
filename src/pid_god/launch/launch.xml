@@ -1,0 +1,7 @@
+<launch>
+
+  <node pkg="pid_god" exec="virtual_robot" name="virtual_robot" output="screen" />
+  <node pkg="pid_god" exec="pid" name="pid_controller" output="screen"/>
+
+
+</launch>
