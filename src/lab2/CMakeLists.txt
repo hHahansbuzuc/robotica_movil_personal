@@ -20,6 +20,7 @@ install(PROGRAMS
   scripts/pid.py
   scripts/run_all.py
   scripts/obstacle_detector.py
+  scripts/data_recorder.py
   DESTINATION lib/${PROJECT_NAME}
 )
 file(GLOB PY_SCRIPTS

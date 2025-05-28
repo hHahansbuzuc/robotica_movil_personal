@@ -22,6 +22,7 @@ class Desplazador(Node):
         self.sub_occupancy = self.create_subscription(Vector3, '/occupancy_state', self.cb_occupancy, 10, callback_group=cbg)
         self.sub_pid_ready = self.create_subscription(Bool, 'pid_ready', self.cb_pid_done, 10, callback_group=cbg)
         self.pub_desplazador = self.create_publisher(Float64MultiArray, 'objetivo', 10, callback_group=cbg)
+        
 
         self.ready = False
 
@@ -42,12 +43,12 @@ class Desplazador(Node):
         y = goal_pose.position.y
         theta = goal_pose.orientation.z
 
-        distancia = math.sqrt(x**2 + y**2)
+
         rotacion = theta
         desplazamientos = [
-            (distancia, 0.0),
+            (x, 0.0),
             (0.0, rotacion),
-            (distancia, 0.0)
+            (y, 0.0)
         ]
 
         for d in desplazamientos:
@@ -64,7 +65,6 @@ class Desplazador(Node):
 
     def accion_mover_cb(self, msg: PoseArray):
         for goal_pose in msg.poses:
-            self.get_logger().info(f"Goal → x={goal_pose.position.x}, y={goal_pose.position.y}")
             self.mover_robot_a_destino(goal_pose)
 
 def main():
