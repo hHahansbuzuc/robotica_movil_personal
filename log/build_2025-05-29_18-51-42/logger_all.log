@@ -1,0 +1,418 @@
+[0.249s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.249s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f709ade9a80>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f709ade94b0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f709ade94b0>>, mixin_verb=('build',))
+[0.532s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.532s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.532s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.532s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.532s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.532s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.532s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/maxbe/ros2_ws'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_mux) by extensions ['ignore', 'ignore_ament_install']
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_mux) by extension 'ignore'
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_mux) by extension 'ignore_ament_install'
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_mux) by extensions ['colcon_pkg']
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_mux) by extension 'colcon_pkg'
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_mux) by extensions ['colcon_meta']
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_mux) by extension 'colcon_meta'
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_mux) by extensions ['ros']
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_mux) by extension 'ros'
+[0.548s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cmd_vel_mux' with type 'ros.ament_cmake' and name 'cmd_vel_mux'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1) by extensions ['ignore', 'ignore_ament_install']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1) by extension 'ignore'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1) by extension 'ignore_ament_install'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1) by extensions ['colcon_pkg']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1) by extension 'colcon_pkg'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1) by extensions ['colcon_meta']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1) by extension 'colcon_meta'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1) by extensions ['ros']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1) by extension 'ros'
+[0.550s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lab1' with type 'ros.ament_cmake' and name 'lab1'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab2) by extensions ['ignore', 'ignore_ament_install']
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab2) by extension 'ignore'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab2) by extension 'ignore_ament_install'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab2) by extensions ['colcon_pkg']
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab2) by extension 'colcon_pkg'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab2) by extensions ['colcon_meta']
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab2) by extension 'colcon_meta'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab2) by extensions ['ros']
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab2) by extension 'ros'
+[0.551s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lab2' with type 'ros.ament_cmake' and name 'lab2'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_god) by extensions ['ignore', 'ignore_ament_install']
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_god) by extension 'ignore'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_god) by extension 'ignore_ament_install'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_god) by extensions ['colcon_pkg']
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_god) by extension 'colcon_pkg'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_god) by extensions ['colcon_meta']
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_god) by extension 'colcon_meta'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_god) by extensions ['ros']
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/pid_god) by extension 'ros'
+[0.553s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pid_god' with type 'ros.ament_cmake' and name 'pid_god'
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/very_simple_robot_simulator) by extensions ['ignore', 'ignore_ament_install']
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/very_simple_robot_simulator) by extension 'ignore'
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/very_simple_robot_simulator) by extension 'ignore_ament_install'
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/very_simple_robot_simulator) by extensions ['colcon_pkg']
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/very_simple_robot_simulator) by extension 'colcon_pkg'
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/very_simple_robot_simulator) by extensions ['colcon_meta']
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/very_simple_robot_simulator) by extension 'colcon_meta'
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/very_simple_robot_simulator) by extensions ['ros']
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/very_simple_robot_simulator) by extension 'ros'
+[0.554s] DEBUG:colcon.colcon_core.package_identification:Package 'src/very_simple_robot_simulator' with type 'ros.ament_cmake' and name 'very_simple_robot_simulator'
+[0.554s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.554s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.554s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.554s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.554s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.587s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.588s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.592s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/maxbe/ros2_ws/install
+[0.594s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 274 installed packages in /opt/ros/humble
+[0.595s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.669s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_mux' build argument 'cmake_args' from command line to 'None'
+[0.669s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_mux' build argument 'cmake_target' from command line to 'None'
+[0.669s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_mux' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.669s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_mux' build argument 'cmake_clean_cache' from command line to 'False'
+[0.669s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_mux' build argument 'cmake_clean_first' from command line to 'False'
+[0.669s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_mux' build argument 'cmake_force_configure' from command line to 'False'
+[0.669s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_mux' build argument 'ament_cmake_args' from command line to 'None'
+[0.669s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_mux' build argument 'catkin_cmake_args' from command line to 'None'
+[0.669s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_mux' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.669s] DEBUG:colcon.colcon_core.verb:Building package 'cmd_vel_mux' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/maxbe/ros2_ws/build/cmd_vel_mux', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/maxbe/ros2_ws/install/cmd_vel_mux', 'merge_install': False, 'path': '/home/maxbe/ros2_ws/src/cmd_vel_mux', 'symlink_install': True, 'test_result_base': None}
+[0.669s] Level 5:colcon.colcon_core.verb:set package 'lab1' build argument 'cmake_args' from command line to 'None'
+[0.669s] Level 5:colcon.colcon_core.verb:set package 'lab1' build argument 'cmake_target' from command line to 'None'
+[0.669s] Level 5:colcon.colcon_core.verb:set package 'lab1' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.669s] Level 5:colcon.colcon_core.verb:set package 'lab1' build argument 'cmake_clean_cache' from command line to 'False'
+[0.669s] Level 5:colcon.colcon_core.verb:set package 'lab1' build argument 'cmake_clean_first' from command line to 'False'
+[0.669s] Level 5:colcon.colcon_core.verb:set package 'lab1' build argument 'cmake_force_configure' from command line to 'False'
+[0.669s] Level 5:colcon.colcon_core.verb:set package 'lab1' build argument 'ament_cmake_args' from command line to 'None'
+[0.669s] Level 5:colcon.colcon_core.verb:set package 'lab1' build argument 'catkin_cmake_args' from command line to 'None'
+[0.669s] Level 5:colcon.colcon_core.verb:set package 'lab1' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.670s] DEBUG:colcon.colcon_core.verb:Building package 'lab1' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/maxbe/ros2_ws/build/lab1', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/maxbe/ros2_ws/install/lab1', 'merge_install': False, 'path': '/home/maxbe/ros2_ws/src/lab1', 'symlink_install': True, 'test_result_base': None}
+[0.670s] Level 5:colcon.colcon_core.verb:set package 'lab2' build argument 'cmake_args' from command line to 'None'
+[0.670s] Level 5:colcon.colcon_core.verb:set package 'lab2' build argument 'cmake_target' from command line to 'None'
+[0.670s] Level 5:colcon.colcon_core.verb:set package 'lab2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.670s] Level 5:colcon.colcon_core.verb:set package 'lab2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.670s] Level 5:colcon.colcon_core.verb:set package 'lab2' build argument 'cmake_clean_first' from command line to 'False'
+[0.670s] Level 5:colcon.colcon_core.verb:set package 'lab2' build argument 'cmake_force_configure' from command line to 'False'
+[0.670s] Level 5:colcon.colcon_core.verb:set package 'lab2' build argument 'ament_cmake_args' from command line to 'None'
+[0.670s] Level 5:colcon.colcon_core.verb:set package 'lab2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.670s] Level 5:colcon.colcon_core.verb:set package 'lab2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.670s] DEBUG:colcon.colcon_core.verb:Building package 'lab2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/maxbe/ros2_ws/build/lab2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/maxbe/ros2_ws/install/lab2', 'merge_install': False, 'path': '/home/maxbe/ros2_ws/src/lab2', 'symlink_install': True, 'test_result_base': None}
+[0.670s] Level 5:colcon.colcon_core.verb:set package 'pid_god' build argument 'cmake_args' from command line to 'None'
+[0.670s] Level 5:colcon.colcon_core.verb:set package 'pid_god' build argument 'cmake_target' from command line to 'None'
+[0.670s] Level 5:colcon.colcon_core.verb:set package 'pid_god' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.670s] Level 5:colcon.colcon_core.verb:set package 'pid_god' build argument 'cmake_clean_cache' from command line to 'False'
+[0.670s] Level 5:colcon.colcon_core.verb:set package 'pid_god' build argument 'cmake_clean_first' from command line to 'False'
+[0.670s] Level 5:colcon.colcon_core.verb:set package 'pid_god' build argument 'cmake_force_configure' from command line to 'False'
+[0.670s] Level 5:colcon.colcon_core.verb:set package 'pid_god' build argument 'ament_cmake_args' from command line to 'None'
+[0.670s] Level 5:colcon.colcon_core.verb:set package 'pid_god' build argument 'catkin_cmake_args' from command line to 'None'
+[0.670s] Level 5:colcon.colcon_core.verb:set package 'pid_god' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.670s] DEBUG:colcon.colcon_core.verb:Building package 'pid_god' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/maxbe/ros2_ws/build/pid_god', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/maxbe/ros2_ws/install/pid_god', 'merge_install': False, 'path': '/home/maxbe/ros2_ws/src/pid_god', 'symlink_install': True, 'test_result_base': None}
+[0.670s] Level 5:colcon.colcon_core.verb:set package 'very_simple_robot_simulator' build argument 'cmake_args' from command line to 'None'
+[0.670s] Level 5:colcon.colcon_core.verb:set package 'very_simple_robot_simulator' build argument 'cmake_target' from command line to 'None'
+[0.670s] Level 5:colcon.colcon_core.verb:set package 'very_simple_robot_simulator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.671s] Level 5:colcon.colcon_core.verb:set package 'very_simple_robot_simulator' build argument 'cmake_clean_cache' from command line to 'False'
+[0.671s] Level 5:colcon.colcon_core.verb:set package 'very_simple_robot_simulator' build argument 'cmake_clean_first' from command line to 'False'
+[0.671s] Level 5:colcon.colcon_core.verb:set package 'very_simple_robot_simulator' build argument 'cmake_force_configure' from command line to 'False'
+[0.671s] Level 5:colcon.colcon_core.verb:set package 'very_simple_robot_simulator' build argument 'ament_cmake_args' from command line to 'None'
+[0.671s] Level 5:colcon.colcon_core.verb:set package 'very_simple_robot_simulator' build argument 'catkin_cmake_args' from command line to 'None'
+[0.671s] Level 5:colcon.colcon_core.verb:set package 'very_simple_robot_simulator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.671s] DEBUG:colcon.colcon_core.verb:Building package 'very_simple_robot_simulator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/maxbe/ros2_ws/build/very_simple_robot_simulator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/maxbe/ros2_ws/install/very_simple_robot_simulator', 'merge_install': False, 'path': '/home/maxbe/ros2_ws/src/very_simple_robot_simulator', 'symlink_install': True, 'test_result_base': None}
+[0.671s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.671s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.672s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/maxbe/ros2_ws/src/cmd_vel_mux' with build type 'ament_cmake'
+[0.672s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/maxbe/ros2_ws/src/cmd_vel_mux'
+[0.677s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.677s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.677s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.680s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/maxbe/ros2_ws/src/lab1' with build type 'ament_cmake'
+[0.681s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/maxbe/ros2_ws/src/lab1'
+[0.681s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.681s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.684s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/maxbe/ros2_ws/src/lab2' with build type 'ament_cmake'
+[0.684s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/maxbe/ros2_ws/src/lab2'
+[0.684s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.685s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.688s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/maxbe/ros2_ws/src/pid_god' with build type 'ament_cmake'
+[0.688s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/maxbe/ros2_ws/src/pid_god'
+[0.688s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.688s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.691s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/maxbe/ros2_ws/src/very_simple_robot_simulator' with build type 'ament_cmake'
+[0.691s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/maxbe/ros2_ws/src/very_simple_robot_simulator'
+[0.692s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.692s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.702s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maxbe/ros2_ws/build/cmd_vel_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maxbe/ros2_ws/build/cmd_vel_mux -- -j12 -l12
+[0.705s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maxbe/ros2_ws/build/lab1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maxbe/ros2_ws/build/lab1 -- -j12 -l12
+[0.708s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maxbe/ros2_ws/build/lab2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maxbe/ros2_ws/build/lab2 -- -j12 -l12
+[0.716s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maxbe/ros2_ws/build/pid_god': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maxbe/ros2_ws/build/pid_god -- -j12 -l12
+[0.719s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maxbe/ros2_ws/build/very_simple_robot_simulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maxbe/ros2_ws/build/very_simple_robot_simulator -- -j12 -l12
+[0.766s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maxbe/ros2_ws/build/lab2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maxbe/ros2_ws/build/lab2 -- -j12 -l12
+[0.774s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maxbe/ros2_ws/build/lab2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maxbe/ros2_ws/build/lab2
+[0.775s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maxbe/ros2_ws/build/pid_god' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maxbe/ros2_ws/build/pid_god -- -j12 -l12
+[0.777s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maxbe/ros2_ws/build/pid_god': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maxbe/ros2_ws/build/pid_god
+[0.791s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maxbe/ros2_ws/build/cmd_vel_mux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maxbe/ros2_ws/build/cmd_vel_mux -- -j12 -l12
+[0.793s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maxbe/ros2_ws/build/cmd_vel_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maxbe/ros2_ws/build/cmd_vel_mux
+[0.799s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pid_god)
+[0.801s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maxbe/ros2_ws/build/pid_god' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maxbe/ros2_ws/build/pid_god
+[0.814s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/pid_god' for CMake module files
+[0.815s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/pid_god' for CMake config files
+[0.816s] Level 1:colcon.colcon_core.shell:create_environment_hook('pid_god', 'cmake_prefix_path')
+[0.817s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maxbe/ros2_ws/install/pid_god/share/pid_god/hook/cmake_prefix_path.ps1'
+[0.817s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maxbe/ros2_ws/install/pid_god/share/pid_god/hook/cmake_prefix_path.dsv'
+[0.818s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maxbe/ros2_ws/install/pid_god/share/pid_god/hook/cmake_prefix_path.sh'
+[0.819s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/pid_god/lib'
+[0.819s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/pid_god/bin'
+[0.819s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/pid_god/lib/pkgconfig/pid_god.pc'
+[0.819s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/pid_god/lib/python3.10/site-packages'
+[0.820s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/pid_god/bin'
+[0.820s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/pid_god/share/pid_god/package.ps1'
+[0.821s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maxbe/ros2_ws/install/pid_god/share/pid_god/package.dsv'
+[0.822s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/pid_god/share/pid_god/package.sh'
+[0.822s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/pid_god/share/pid_god/package.bash'
+[0.823s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/pid_god/share/pid_god/package.zsh'
+[0.824s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maxbe/ros2_ws/install/pid_god/share/colcon-core/packages/pid_god)
+[0.824s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pid_god)
+[0.824s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/pid_god' for CMake module files
+[0.825s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/pid_god' for CMake config files
+[0.825s] Level 1:colcon.colcon_core.shell:create_environment_hook('pid_god', 'cmake_prefix_path')
+[0.825s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maxbe/ros2_ws/install/pid_god/share/pid_god/hook/cmake_prefix_path.ps1'
+[0.825s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maxbe/ros2_ws/install/pid_god/share/pid_god/hook/cmake_prefix_path.dsv'
+[0.825s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maxbe/ros2_ws/install/pid_god/share/pid_god/hook/cmake_prefix_path.sh'
+[0.826s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/pid_god/lib'
+[0.826s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/pid_god/bin'
+[0.826s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/pid_god/lib/pkgconfig/pid_god.pc'
+[0.826s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/pid_god/lib/python3.10/site-packages'
+[0.826s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/pid_god/bin'
+[0.826s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/pid_god/share/pid_god/package.ps1'
+[0.827s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maxbe/ros2_ws/install/pid_god/share/pid_god/package.dsv'
+[0.827s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/pid_god/share/pid_god/package.sh'
+[0.827s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/pid_god/share/pid_god/package.bash'
+[0.828s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/pid_god/share/pid_god/package.zsh'
+[0.828s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maxbe/ros2_ws/install/pid_god/share/colcon-core/packages/pid_god)
+[0.830s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cmd_vel_mux)
+[0.830s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/cmd_vel_mux' for CMake module files
+[0.831s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maxbe/ros2_ws/build/cmd_vel_mux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maxbe/ros2_ws/build/cmd_vel_mux
+[0.831s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/cmd_vel_mux' for CMake config files
+[0.832s] Level 1:colcon.colcon_core.shell:create_environment_hook('cmd_vel_mux', 'cmake_prefix_path')
+[0.832s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/cmake_prefix_path.ps1'
+[0.833s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/cmake_prefix_path.dsv'
+[0.833s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/cmake_prefix_path.sh'
+[0.833s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/cmd_vel_mux/lib'
+[0.833s] Level 1:colcon.colcon_core.shell:create_environment_hook('cmd_vel_mux', 'ld_library_path_lib')
+[0.834s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/ld_library_path_lib.ps1'
+[0.834s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/ld_library_path_lib.dsv'
+[0.834s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/ld_library_path_lib.sh'
+[0.834s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/cmd_vel_mux/bin'
+[0.834s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/cmd_vel_mux/lib/pkgconfig/cmd_vel_mux.pc'
+[0.834s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/cmd_vel_mux/lib/python3.10/site-packages'
+[0.835s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/cmd_vel_mux/bin'
+[0.835s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.ps1'
+[0.835s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.dsv'
+[0.835s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.sh'
+[0.836s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.bash'
+[0.836s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.zsh'
+[0.836s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maxbe/ros2_ws/install/cmd_vel_mux/share/colcon-core/packages/cmd_vel_mux)
+[0.837s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cmd_vel_mux)
+[0.837s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/cmd_vel_mux' for CMake module files
+[0.837s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/cmd_vel_mux' for CMake config files
+[0.837s] Level 1:colcon.colcon_core.shell:create_environment_hook('cmd_vel_mux', 'cmake_prefix_path')
+[0.837s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/cmake_prefix_path.ps1'
+[0.838s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/cmake_prefix_path.dsv'
+[0.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/cmake_prefix_path.sh'
+[0.838s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/cmd_vel_mux/lib'
+[0.838s] Level 1:colcon.colcon_core.shell:create_environment_hook('cmd_vel_mux', 'ld_library_path_lib')
+[0.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/ld_library_path_lib.ps1'
+[0.839s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/ld_library_path_lib.dsv'
+[0.839s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/ld_library_path_lib.sh'
+[0.839s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/cmd_vel_mux/bin'
+[0.839s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/cmd_vel_mux/lib/pkgconfig/cmd_vel_mux.pc'
+[0.839s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/cmd_vel_mux/lib/python3.10/site-packages'
+[0.839s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/cmd_vel_mux/bin'
+[0.840s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.ps1'
+[0.840s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.dsv'
+[0.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.sh'
+[0.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.bash'
+[0.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.zsh'
+[0.842s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maxbe/ros2_ws/install/cmd_vel_mux/share/colcon-core/packages/cmd_vel_mux)
+[0.842s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab2)
+[0.842s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/lab2' for CMake module files
+[0.844s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maxbe/ros2_ws/build/lab2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maxbe/ros2_ws/build/lab2
+[0.845s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/lab2' for CMake config files
+[0.847s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab2', 'cmake_prefix_path')
+[0.847s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maxbe/ros2_ws/install/lab2/share/lab2/hook/cmake_prefix_path.ps1'
+[0.847s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maxbe/ros2_ws/install/lab2/share/lab2/hook/cmake_prefix_path.dsv'
+[0.848s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maxbe/ros2_ws/install/lab2/share/lab2/hook/cmake_prefix_path.sh'
+[0.848s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/lab2/lib'
+[0.848s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/lab2/bin'
+[0.848s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/lab2/lib/pkgconfig/lab2.pc'
+[0.849s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/lab2/lib/python3.10/site-packages'
+[0.849s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/lab2/bin'
+[0.849s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/lab2/share/lab2/package.ps1'
+[0.849s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maxbe/ros2_ws/install/lab2/share/lab2/package.dsv'
+[0.850s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/lab2/share/lab2/package.sh'
+[0.850s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/lab2/share/lab2/package.bash'
+[0.850s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/lab2/share/lab2/package.zsh'
+[0.851s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maxbe/ros2_ws/install/lab2/share/colcon-core/packages/lab2)
+[0.851s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab2)
+[0.851s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/lab2' for CMake module files
+[0.852s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/lab2' for CMake config files
+[0.852s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab2', 'cmake_prefix_path')
+[0.852s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maxbe/ros2_ws/install/lab2/share/lab2/hook/cmake_prefix_path.ps1'
+[0.852s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maxbe/ros2_ws/install/lab2/share/lab2/hook/cmake_prefix_path.dsv'
+[0.853s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maxbe/ros2_ws/install/lab2/share/lab2/hook/cmake_prefix_path.sh'
+[0.853s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/lab2/lib'
+[0.853s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/lab2/bin'
+[0.853s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/lab2/lib/pkgconfig/lab2.pc'
+[0.853s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/lab2/lib/python3.10/site-packages'
+[0.853s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/lab2/bin'
+[0.854s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/lab2/share/lab2/package.ps1'
+[0.854s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maxbe/ros2_ws/install/lab2/share/lab2/package.dsv'
+[0.854s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/lab2/share/lab2/package.sh'
+[0.855s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/lab2/share/lab2/package.bash'
+[0.855s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/lab2/share/lab2/package.zsh'
+[0.855s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maxbe/ros2_ws/install/lab2/share/colcon-core/packages/lab2)
+[1.001s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maxbe/ros2_ws/build/lab1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maxbe/ros2_ws/build/lab1 -- -j12 -l12
+[1.003s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maxbe/ros2_ws/build/lab1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maxbe/ros2_ws/build/lab1
+[1.005s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maxbe/ros2_ws/build/very_simple_robot_simulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maxbe/ros2_ws/build/very_simple_robot_simulator -- -j12 -l12
+[1.007s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maxbe/ros2_ws/build/very_simple_robot_simulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maxbe/ros2_ws/build/very_simple_robot_simulator
+[1.053s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab1)
+[1.054s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maxbe/ros2_ws/build/lab1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maxbe/ros2_ws/build/lab1
+[1.054s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/lab1' for CMake module files
+[1.055s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/lab1' for CMake config files
+[1.057s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab1', 'cmake_prefix_path')
+[1.057s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maxbe/ros2_ws/install/lab1/share/lab1/hook/cmake_prefix_path.ps1'
+[1.057s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maxbe/ros2_ws/install/lab1/share/lab1/hook/cmake_prefix_path.dsv'
+[1.058s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maxbe/ros2_ws/install/lab1/share/lab1/hook/cmake_prefix_path.sh'
+[1.058s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/lab1/libexec'
+[1.058s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/lab1/lib'
+[1.058s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/lab1/bin'
+[1.059s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/lab1/lib/pkgconfig/lab1.pc'
+[1.059s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/lab1/lib/python3.10/site-packages'
+[1.059s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/lab1/bin'
+[1.059s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/lab1/share/lab1/package.ps1'
+[1.059s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maxbe/ros2_ws/install/lab1/share/lab1/package.dsv'
+[1.060s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/lab1/share/lab1/package.sh'
+[1.060s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/lab1/share/lab1/package.bash'
+[1.060s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/lab1/share/lab1/package.zsh'
+[1.061s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maxbe/ros2_ws/install/lab1/share/colcon-core/packages/lab1)
+[1.061s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab1)
+[1.061s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/lab1' for CMake module files
+[1.061s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/lab1' for CMake config files
+[1.062s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab1', 'cmake_prefix_path')
+[1.062s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maxbe/ros2_ws/install/lab1/share/lab1/hook/cmake_prefix_path.ps1'
+[1.062s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maxbe/ros2_ws/install/lab1/share/lab1/hook/cmake_prefix_path.dsv'
+[1.062s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maxbe/ros2_ws/install/lab1/share/lab1/hook/cmake_prefix_path.sh'
+[1.063s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/lab1/libexec'
+[1.063s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/lab1/lib'
+[1.063s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/lab1/bin'
+[1.063s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/lab1/lib/pkgconfig/lab1.pc'
+[1.063s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/lab1/lib/python3.10/site-packages'
+[1.063s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/lab1/bin'
+[1.063s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/lab1/share/lab1/package.ps1'
+[1.064s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maxbe/ros2_ws/install/lab1/share/lab1/package.dsv'
+[1.064s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/lab1/share/lab1/package.sh'
+[1.064s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/lab1/share/lab1/package.bash'
+[1.064s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/lab1/share/lab1/package.zsh'
+[1.065s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maxbe/ros2_ws/install/lab1/share/colcon-core/packages/lab1)
+[1.066s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(very_simple_robot_simulator)
+[1.067s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/very_simple_robot_simulator' for CMake module files
+[1.067s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maxbe/ros2_ws/build/very_simple_robot_simulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maxbe/ros2_ws/build/very_simple_robot_simulator
+[1.068s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/very_simple_robot_simulator' for CMake config files
+[1.070s] Level 1:colcon.colcon_core.shell:create_environment_hook('very_simple_robot_simulator', 'cmake_prefix_path')
+[1.070s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maxbe/ros2_ws/install/very_simple_robot_simulator/share/very_simple_robot_simulator/hook/cmake_prefix_path.ps1'
+[1.071s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maxbe/ros2_ws/install/very_simple_robot_simulator/share/very_simple_robot_simulator/hook/cmake_prefix_path.dsv'
+[1.071s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maxbe/ros2_ws/install/very_simple_robot_simulator/share/very_simple_robot_simulator/hook/cmake_prefix_path.sh'
+[1.071s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/very_simple_robot_simulator/lib'
+[1.072s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/very_simple_robot_simulator/bin'
+[1.072s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/very_simple_robot_simulator/lib/pkgconfig/very_simple_robot_simulator.pc'
+[1.072s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/very_simple_robot_simulator/lib/python3.10/site-packages'
+[1.072s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/very_simple_robot_simulator/bin'
+[1.072s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/very_simple_robot_simulator/share/very_simple_robot_simulator/package.ps1'
+[1.073s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maxbe/ros2_ws/install/very_simple_robot_simulator/share/very_simple_robot_simulator/package.dsv'
+[1.073s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/very_simple_robot_simulator/share/very_simple_robot_simulator/package.sh'
+[1.074s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/very_simple_robot_simulator/share/very_simple_robot_simulator/package.bash'
+[1.074s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/very_simple_robot_simulator/share/very_simple_robot_simulator/package.zsh'
+[1.074s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maxbe/ros2_ws/install/very_simple_robot_simulator/share/colcon-core/packages/very_simple_robot_simulator)
+[1.075s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(very_simple_robot_simulator)
+[1.075s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/very_simple_robot_simulator' for CMake module files
+[1.075s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/very_simple_robot_simulator' for CMake config files
+[1.076s] Level 1:colcon.colcon_core.shell:create_environment_hook('very_simple_robot_simulator', 'cmake_prefix_path')
+[1.076s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maxbe/ros2_ws/install/very_simple_robot_simulator/share/very_simple_robot_simulator/hook/cmake_prefix_path.ps1'
+[1.076s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maxbe/ros2_ws/install/very_simple_robot_simulator/share/very_simple_robot_simulator/hook/cmake_prefix_path.dsv'
+[1.076s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maxbe/ros2_ws/install/very_simple_robot_simulator/share/very_simple_robot_simulator/hook/cmake_prefix_path.sh'
+[1.077s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/very_simple_robot_simulator/lib'
+[1.077s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/very_simple_robot_simulator/bin'
+[1.077s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/very_simple_robot_simulator/lib/pkgconfig/very_simple_robot_simulator.pc'
+[1.077s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/very_simple_robot_simulator/lib/python3.10/site-packages'
+[1.077s] Level 1:colcon.colcon_core.environment:checking '/home/maxbe/ros2_ws/install/very_simple_robot_simulator/bin'
+[1.077s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/very_simple_robot_simulator/share/very_simple_robot_simulator/package.ps1'
+[1.078s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maxbe/ros2_ws/install/very_simple_robot_simulator/share/very_simple_robot_simulator/package.dsv'
+[1.078s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/very_simple_robot_simulator/share/very_simple_robot_simulator/package.sh'
+[1.079s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/very_simple_robot_simulator/share/very_simple_robot_simulator/package.bash'
+[1.079s] INFO:colcon.colcon_core.shell:Creating package script '/home/maxbe/ros2_ws/install/very_simple_robot_simulator/share/very_simple_robot_simulator/package.zsh'
+[1.079s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maxbe/ros2_ws/install/very_simple_robot_simulator/share/colcon-core/packages/very_simple_robot_simulator)
+[1.080s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.080s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.080s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.080s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.129s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[1.129s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.129s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.129s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.129s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[1.129s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.129s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/maxbe/ros2_ws/install/local_setup.ps1'
+[1.131s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/maxbe/ros2_ws/install/_local_setup_util_ps1.py'
+[1.132s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/maxbe/ros2_ws/install/setup.ps1'
+[1.133s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/maxbe/ros2_ws/install/local_setup.sh'
+[1.133s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/maxbe/ros2_ws/install/_local_setup_util_sh.py'
+[1.134s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/maxbe/ros2_ws/install/setup.sh'
+[1.135s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/maxbe/ros2_ws/install/local_setup.bash'
+[1.135s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/maxbe/ros2_ws/install/setup.bash'
+[1.137s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/maxbe/ros2_ws/install/local_setup.zsh'
+[1.137s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/maxbe/ros2_ws/install/setup.zsh'

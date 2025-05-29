@@ -1,0 +1,9 @@
+<launch>
+  <include file="$(find-pkg-share very_simple_robot_simulator)/launch/run_all.xml"/>
+
+  <node pkg="lab2"
+        exec="run_all_3.py"
+        name="nav_carrot"
+        output="screen">
+  </node>
+</launch>

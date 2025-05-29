@@ -13,7 +13,7 @@ class PidWalls(Node):
         cbg = ReentrantCallbackGroup()
 
         # Parámetros PID (P puro)
-        self.Kp = 0.2
+        self.Kp = 2.1
         self.Ki = 0.0
         self.Kd = 0.0
 
@@ -63,7 +63,9 @@ class PidWalls(Node):
             return
 
         # Error lateral: + si right > left (estamos más cerca pared izq)
-        e_k = self.dist_right - self.dist_left
+        e_k = self.dist_left - self.dist_right 
+        # limito el error a un rango razonable
+        e_k = max(-6.8, min(6.8, e_k))
 
         # Cálculo incremental PID
         a0 = self.Kp + self.Ki * self.dt + self.Kd / self.dt
@@ -84,7 +86,7 @@ class PidWalls(Node):
             u_ang = 0.0
 
         # Saturación angular
-        max_ang = 1.0  # rad/s
+        max_ang = 120.0  # rad/s
         if u_ang >  max_ang: u_ang =  max_ang
         if u_ang < -max_ang: u_ang = -max_ang
 

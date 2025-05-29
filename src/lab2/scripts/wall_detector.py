@@ -46,35 +46,41 @@ class WallDetector(Node):
         )
 
     def image_callback(self, msg: Image):
-        # Convertir ROS Image a array NumPy
         depth = self.bridge.imgmsg_to_cv2(msg, desired_encoding='passthrough')
         arr = np.array(depth, copy=False).astype(np.float32)
         h, w = arr.shape
 
-        # Dividimos la imagen en tres regiones verticales
-        third    = w // 3
-        left     = arr[:, :third]
-        center   = arr[:, third:2*third]
-        right    = arr[:, 2*third:]
+        # 1) Define una franja centrada verticalmente (±5% de la altura)
+        mid    = h // 2
+        margin = int(h * 0.05)
+        stripe = arr[mid-margin:mid+margin, :]
 
-        # Convertir ceros (sin dato) a NaN para ignorarlos
-        for region in (left, center, right):
-            region[region == 0] = np.nan
+        # 2) Divide en izquierda/derecha
+        third = w // 3
+        left  = stripe[:, :third].flatten()
+        right = stripe[:, 2*third:].flatten()
 
-        # Extraer la mínima distancia válida en cada región
-        dl = float(np.nanmin(left))   if not np.all(np.isnan(left))   else float('inf')
-        dc = float(np.nanmin(center)) if not np.all(np.isnan(center)) else float('inf')
-        dr = float(np.nanmin(right))  if not np.all(np.isnan(right))  else float('inf')
+        # 3) Filtra ceros y NaNs
+        left  = left[(left > 0) & ~np.isnan(left)]
+        right = right[(right > 0) & ~np.isnan(right)]
 
-        # Guardamos solo izq (x) y der (y)
+        # 4) Toma un percentil bajo (p.ej. 5%) o la mediana
+        if left.size:
+            dl = np.percentile(left, 5)    # o np.median(left)
+        else:
+            dl = float('inf')
+        if right.size:
+            dr = np.percentile(right, 5)   # o np.median(right)
+        else:
+            dr = float('inf')
+
+        # 5) Publica dist_left/dr y su diferencia
         self.dists.x = dl
         self.dists.y = dr
-        # y como z la diferencia absoluta
         self.dists.z = abs(dr - dl)
 
-        # Si quieres loguear:
         self.get_logger().debug(
-            f"dl={dl:.2f}m  dr={dr:.2f}m  diff={self.dists.z:.2f}m"
+            f"[ROI] dl={dl:.2f}m  dr={dr:.2f}m  diff={self.dists.z:.2f}m"
         )
 
     def publish_distances(self):
@@ -83,7 +89,7 @@ class WallDetector(Node):
 
 def main():
     rclpy.init()
-    node = ObstacleDetector()
+    node = WallDetector()
 
     # Executor multihilo para callbacks concurrentes
     executor = MultiThreadedExecutor(num_threads=2)

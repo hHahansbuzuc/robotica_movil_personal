@@ -22,6 +22,7 @@ install(PROGRAMS
   scripts/wall_detector.py
   scripts/data_recorder.py
   scripts/run_all_2.py
+  scripts/run_all_3.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
