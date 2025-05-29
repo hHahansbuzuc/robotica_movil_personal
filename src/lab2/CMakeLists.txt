@@ -19,10 +19,12 @@ install(PROGRAMS
   scripts/pub_velocidad.py
   scripts/pid.py
   scripts/run_all.py
-  scripts/obstacle_detector.py
+  scripts/wall_detector.py
   scripts/data_recorder.py
+  scripts/run_all_2.py
   DESTINATION lib/${PROJECT_NAME}
 )
+
 file(GLOB PY_SCRIPTS
   "${CMAKE_CURRENT_SOURCE_DIR}/scripts/*.py"
 )

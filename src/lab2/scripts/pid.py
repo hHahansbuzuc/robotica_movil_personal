@@ -91,7 +91,7 @@ class PIDController(Node):
             self.get_logger().info("Recivi moviemiento angular")
             self.r_t = angular
             self.tipo_control = "angular"
-            self.Kp, self.Ki, self.Kd = 0.35, 0.0, 0.0
+            self.Kp, self.Ki, self.Kd = 0.2, 0.0, 0.0
             self.start_yaw = self.curr_yaw
         else:
             self.tipo_control = None  # ningún desplazamiento

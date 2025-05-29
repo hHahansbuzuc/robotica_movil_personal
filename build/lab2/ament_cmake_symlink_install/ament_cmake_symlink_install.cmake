@@ -310,8 +310,8 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(PROGRAMS "scripts/desplazador.py" "scripts/pose_loader.py" "scripts/pub_velocidad.py" "scripts/pid.py" "scripts/run_all.py" "scripts/obstacle_detector.py" "DESTINATION" "lib/lab2")
-ament_cmake_symlink_install_programs("/home/maxbe/ros2_ws/src/lab2" PROGRAMS "scripts/desplazador.py" "scripts/pose_loader.py" "scripts/pub_velocidad.py" "scripts/pid.py" "scripts/run_all.py" "scripts/obstacle_detector.py" "DESTINATION" "lib/lab2")
+# install(PROGRAMS "scripts/desplazador.py" "scripts/pose_loader.py" "scripts/pub_velocidad.py" "scripts/pid.py" "scripts/run_all.py" "scripts/wall_detector.py" "scripts/data_recorder.py" "scripts/run_all_2.py" "DESTINATION" "lib/lab2")
+ament_cmake_symlink_install_programs("/home/maxbe/ros2_ws/src/lab2" PROGRAMS "scripts/desplazador.py" "scripts/pose_loader.py" "scripts/pub_velocidad.py" "scripts/pid.py" "scripts/run_all.py" "scripts/wall_detector.py" "scripts/data_recorder.py" "scripts/run_all_2.py" "DESTINATION" "lib/lab2")
 
 # install(DIRECTORY "launch" "DESTINATION" "share/lab2/")
 ament_cmake_symlink_install_directory("/home/maxbe/ros2_ws/src/lab2" DIRECTORY "launch" "DESTINATION" "share/lab2/")

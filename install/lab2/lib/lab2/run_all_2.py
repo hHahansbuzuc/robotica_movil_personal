@@ -1,0 +1,1 @@
+/home/maxbe/ros2_ws/src/lab2/scripts/run_all_2.py

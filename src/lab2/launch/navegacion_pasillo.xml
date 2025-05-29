@@ -1,0 +1,10 @@
+<launch>
+  <!-- simulador -->
+  <include file="$(find-pkg-share very_simple_robot_simulator)/launch/run_all.xml"/>
+
+  <!-- arranca ambos nodos concurrentemente -->
+  <node pkg="lab2"
+        exec="run_all_2.py"
+        name="run_all"
+        output="screen"/>
+</launch>
